@@ -1,0 +1,78 @@
+.c-footer {
+  background: linear-gradient(45deg, #d4954e 0%, #e0b377 100%);
+  display: flex;
+  min-height: 91px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 85px;
+  padding-right: 82px;
+  @include table {
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
+
+  &__sec1 {
+    display: flex;
+    align-items: center;
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    min-height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    font-family: 'Noto Serif CJK JP';
+    justify-content: space-between;
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    max-width: 109px;
+    margin-right: 67px;
+    @include table {
+      margin-right: 20px;
+    }
+    @include mobile {
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+
+  &__item {
+    line-height: 26px;
+    letter-spacing: 3.2px;
+    padding: 0px 28px;
+    @include mobile {
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+
+  &__sec2 {
+    font-family: 'Noto Serif CJK JP';
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2.8px;
+    @include table {
+      margin: auto;
+    }
+    @include mobile {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  &__itemcenter {
+    height: 13px;
+    line-height: 13px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+}
